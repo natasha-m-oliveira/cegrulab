@@ -175,6 +175,7 @@ button:hover, .button:hover {
     }
     .content header .nav .btn-mobile .burger {
         border-top: 0.2rem solid;
+	border-radius: 0;
         width: 2rem;
         margin-left: 1rem;
     }

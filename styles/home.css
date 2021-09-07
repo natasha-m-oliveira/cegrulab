@@ -1,0 +1,315 @@
+.content {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 11.4rem 1fr;
+    grid-template-areas: "header" "main"
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+    padding: 2rem;
+}
+
+.container .left, .right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .space {
+    width: 100%;
+    position: relative;
+    height: 10rem;
+}
+
+/*Outset*/
+
+.container .outset {
+    width: 50rem;
+}
+
+.container .outset h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+    margin-bottom: 2rem;
+}
+
+.container .outset img {
+    width: 100%;
+}
+
+/*About*/
+
+.container .about {
+    margin: 2rem;
+    min-height: 60rem;
+}
+
+.container .left.about {
+    width: 40rem;
+}
+
+.container .about h2 {
+    font-size: 6rem;
+    line-height: 6rem;
+    margin-bottom: 2rem;
+}
+
+.container .about .button {
+    margin: 5rem auto 0;
+    font-weight: 700;
+    max-width: 30rem;
+}
+
+.container .about img {
+    width: 60rem;
+}
+
+/*Services*/
+
+.container .services.title {
+    width: 100%;
+    font-size: 6rem;
+    text-align: center;
+    line-height: 6rem;
+    margin-bottom: 10rem;
+}
+
+.container .services {
+    width: 50rem;
+    margin: 2rem;
+}
+
+.container .services img {
+    width: 100%;
+}
+
+.container .services.text-box {
+    min-height: 33.2rem;
+    padding: 3rem;
+    background: var(--grey);
+    color: var(--purple);
+}
+
+.container .services h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 6rem;
+    margin-bottom: 1rem;
+}
+
+.container .services .button {
+    margin-top: 2rem;
+    background: var(--purple);
+    color: var(--white);
+}
+
+/*Âncoras*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+:target {
+    scroll-margin-top: 5rem;
+}
+
+/*Image Slider*/
+
+.container .box {
+    position: relative;
+    width: 90%;
+}
+
+.container .container-slide {
+    display: none;
+}
+
+.container .container-slide.active {
+    display: block;
+}
+
+.container .box #prev, #next {
+    position: absolute;
+    top: 45%;
+    transform: translate(-45%);
+    color: var(--orange);
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.container .box #prev:hover, #next:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.container .box #prev {
+    left: 2rem;
+}
+
+.container .box #next {
+    right: 2rem;
+}
+
+.container .container-slide .slide {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.container .container-slide .slide .text-box {
+    animation: slideContent 0.4s linear 0.6s backwards;
+}
+
+@keyframes slideContent {
+    0% {
+        opacity: 0;
+        transform: translateX(-5rem);
+    }
+}
+
+.container .container-slide .slide .image {
+    animation: slideImage 0.4s linear;
+}
+
+@keyframes slideImage {
+    0% {
+        opacity: 0;
+        transform: translateY(-5rem);
+    }
+}
+
+.container .container-slide .slide .text-box, .image {
+    flex: 1 1 50rem;
+    padding: 3rem;
+    text-align: center;
+}
+
+.container .container-slide .slide .image img {
+    width: 100%;
+}
+
+.container .container-slide .slide .text-box p, .button {
+    margin: 5rem auto 0;
+}
+
+.container .container-slide .slide .text-box .button {
+    width: 25rem;
+    font-weight: 700;
+    background: var(--orange);
+    color: var(--white);
+}
+
+.container .box .indicator {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+}
+
+.container .box .indicator .btn {
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0.4rem;
+    border-radius: 1.5rem;
+    background: var(--orange);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.container .box .indicator .btn.active{
+    width: 4.5rem;
+}
+
+/*Form*/
+
+.container .form, .overlay {
+    border-radius: 1rem;
+    padding: 5rem 2rem;
+    width: min(50rem, 100%);
+}
+
+.container .overlay {
+    text-align: center;
+}
+
+.container .form input {
+    margin-bottom: 2rem;
+}
+
+.container .form button{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+@media (max-width: 60rem) {
+    main .container {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .container .space {
+        height: 5rem;
+    }
+    .container .about {
+        min-height: 30rem;
+    }
+    .container .outset, .left.about, .services {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .container .outset h1 {
+        font-size: 5rem;
+    }
+    .container .about h2, .services.title h2 {
+        font-size: 4rem;
+    }
+    .container .services.title {
+        margin-bottom: 2rem;
+    }
+    .container .outset img {
+        width: 80%;
+    }
+    .container .services {
+        width: 80%;
+    }
+    .container .about img {
+        width: 80%;
+    }
+    .container .box #prev {
+        left: 0;
+        top: 60%;
+    }
+    .container .box #next {
+        right: 0;
+        top: 60%;
+    }
+}

@@ -49,7 +49,7 @@ main .container {
 }
 
 .container .outset h1 {
-    font-size: 6rem;
+    font-size: 8rem;
     line-height: 6rem;
     margin-bottom: 2rem;
 }
@@ -71,6 +71,7 @@ main .container {
 
 .container .about h2 {
     font-size: 6rem;
+    font-weight: 600;
     line-height: 6rem;
     margin-bottom: 2rem;
 }
@@ -89,10 +90,14 @@ main .container {
 
 .container .services.title {
     width: 100%;
-    font-size: 6rem;
-    text-align: center;
-    line-height: 6rem;
+    text-align: right;
     margin-bottom: 10rem;
+    padding: 0 4rem;
+}
+.container .services.title h2{
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 6rem;
 }
 
 .container .services {
@@ -141,6 +146,18 @@ html {
     width: 90%;
 }
 
+.container .box .title {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+.container .box .title h2{
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 6rem;
+}
+
 .container .container-slide {
     display: none;
 }
@@ -151,8 +168,8 @@ html {
 
 .container .box #prev, #next {
     position: absolute;
-    top: 45%;
-    transform: translate(-45%);
+    top: 60%;
+    transform: translate(-60%);
     color: var(--orange);
     height: 5rem;
     width: 5rem;
@@ -172,7 +189,7 @@ html {
 }
 
 .container .box #next {
-    right: 2rem;
+    right: -4rem;
 }
 
 .container .container-slide .slide {
@@ -213,6 +230,7 @@ html {
 
 .container .container-slide .slide .image img {
     width: 100%;
+    max-width: 80rem;
 }
 
 .container .container-slide .slide .text-box p, .button {
@@ -249,6 +267,34 @@ html {
     width: 4.5rem;
 }
 
+/*Coworking*/
+
+.container .coworking {
+    margin: 2rem;
+}
+
+.container .left.coworking {
+    width: 40%;
+    text-align: left;
+}
+
+.container .coworking.title {
+    width: 100%;
+    text-align: left;
+    padding: 0 4rem;
+    margin-bottom: -10rem;
+}
+.container .coworking.title h2{
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 6rem;
+}
+
+.container .coworking img {
+    width: 100%;
+    max-width: 50rem;
+}
+
 /*Form*/
 
 .container .form, .overlay {
@@ -263,10 +309,6 @@ html {
 
 .container .form input {
     margin-bottom: 2rem;
-}
-
-.container .form input, textarea {
-    color: var(--black);
 }
 
 .container .form button{
@@ -293,7 +335,7 @@ html {
         padding: 0;
     }
     .container .outset h1 {
-        font-size: 5rem;
+        font-size: 6rem;
     }
     .container .about h2, .services.title h2 {
         font-size: 4rem;
@@ -315,7 +357,14 @@ html {
         top: 60%;
     }
     .container .box #next {
-        right: 0;
+        right: -6rem;
         top: 60%;
+    }
+    .container .left.coworking{
+        width: 100%;
+    }
+    .container .coworking.title{
+        padding: 0;
+        margin-bottom: 0;
     }
 }

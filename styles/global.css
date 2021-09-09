@@ -34,14 +34,16 @@ body.menu-active {
 
 /*input and buttons*/
 
-input {
-    border: .2rem solid var(--grey-light);
+input, textarea {
+    background: transparent;
+    border-bottom: .2rem solid var(--yellow);
+    border-radius: 0;
     padding: 0 1.6rem;
     outline: none;
+    color: var(--black);
 }
 
-input, button, .button {
-    border-radius: .8rem;
+input, textarea, button, .button {
     height: 5rem;
 }
 
@@ -97,7 +99,7 @@ button:hover, .button:hover {
 }
 
 .content header img {
-    width: 10.5rem;
+    width: 12;
 }
 
 .content header .nav .btn-mobile {
@@ -133,7 +135,7 @@ button:hover, .button:hover {
 	border-radius: 1rem;
 }
 ::-webkit-scrollbar-thumb {
-	background: var(--orange);
+	background: var(--yellow);
 	border-radius: 1rem;
 }
 
@@ -141,9 +143,6 @@ button:hover, .button:hover {
     .content header {
         width: 100%;
         padding: 0 2rem;
-    }
-    .content header img {
-        width: 6rem;
     }
     .content header .nav ul {
         display: block;
@@ -175,7 +174,7 @@ button:hover, .button:hover {
     }
     .content header .nav .btn-mobile .burger {
         border-top: 0.2rem solid;
-	border-radius: 0;
+        border-radius: 0;
         width: 2rem;
         margin-left: 1rem;
     }

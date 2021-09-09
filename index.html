@@ -30,7 +30,7 @@
 
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!--ICON-->
     <link rel="icon" href="./images/logo.svg">
@@ -40,14 +40,14 @@
 <body>
     <div id="home" class="content" id="outset">
         <header>
-            <img src="./images/logo.svg" alt="CEGRULAB LOGO" class="logo">
+            <img src="./images/header-logo.svg" alt="CEGRULAB LOGO" class="logo">
             <nav role="navigation" class="nav" data-nav>
                 <button aria-label="Abrir menu" class="btn-mobile" data-btn-mobile aria-haspopup="true"
                     aria-controls="menu" aria-expanded="false">Menu <span class="burger"></span></button>
                 <ul role="menu" id="menu">
                     <li><a href="#outset" data-menu-item class="current">INÍCIO</a></li>
                     <li><a href="#about" data-menu-item>QUEM SOMOS</a></li>
-                    <li><a href="#" data-menu-item>COWORKING</a></li>
+                    <li><a href="#coworking" data-menu-item>COWORKING</a></li>
                     <li><a href="#services" data-menu-item>SERVIÇOS</a></li>
                     <li><a href="#contact" data-menu-item>CONTATO</a></li>
                 </ul>
@@ -80,7 +80,7 @@
                 </div>
                 <div class="space"></div>
                 <div class="services title" id="services">
-                    <h2>Serviços</h2>
+                    <h2>Entenda como podemos<br />te ajudar a inovar!</h2>
                 </div>
                 <div class="left services">
                     <img src="./images/startup-leader.jpg" alt="Startup Leader">
@@ -109,7 +109,7 @@
                     <img src="./images/business-people-meeting.jpg" alt="Encontro de Empresários">
                 </div>
                 <div class="left services">
-                    <img src="./images/business-people-meeting.jpg" alt="Encontro de Empresários">
+                    <img src="./images/business-people-shaking-hands-together.jpg" alt="Aperto de Mãos Entre Empresários">
                 </div>
                 <div class="right services text-box">
                     <div class="description">
@@ -122,6 +122,9 @@
                 </div>
                 <div class="space"></div>
                 <div class="box" id="team">
+                    <div class="title">
+                        <h2>Conheça o time que vai<br />ajudar sua empresa!</h2>
+                    </div>
                     <div class="container-slide active">
                         <div class="slide">
                             <div class="image">
@@ -180,6 +183,16 @@
                     </div>
                 </div>
                 <div class="space"></div>
+                <div class="coworking title" id="coworking">
+                    <h2>Faça parte do nosso<br/>coworking e expanda<br/>seus horizontes!</h2>
+                </div>
+                <div class="left coworking">
+                    <p>Somos um hub de inovação, ou seja, somos responsáveis por trazer inovação para a cidade de Guarulhos e Alto Tietê, junto com o setor público, privado, faculdades e principalmente, a sociedade local. O objetivo é que todos trabalhem juntos para progredirmos cada vez mais.</p>
+                </div>
+                <div class="right coworking">
+                    <img src="./images/building-structure.png" alt="Estrutura predial">
+                </div>
+                <div class="space"></div>
                 <div class="overlay" id="contact">
                     <div class="panel">
                         <h1>Entre em contato</h1>
@@ -188,15 +201,13 @@
                 <div class="form">
                     <form action="" class="">
                         <label for="nome">Nome *</label>
-                        <input type="text" id="nome" placeholder="Insira seu nome" inputmode="verbatim">
+                        <input type="text" id="nome" inputmode="verbatim">
                         <label for="email">Email *</label>
-                        <input type="email" id="email" placeholder="Insira seu e-mail" inputmode="email">
+                        <input type="email" id="email" inputmode="email">
                         <label for="tel">Telefone *</label>
-                        <input type="tel" id="tel" placeholder="Insira seu telefone" inputmode="tel">
-                        <label for="address">Endereço</label>
-                        <input type="text" id="address" placeholder="R. Força Pública, 89 - Centro, Guarulhos - SP, 07012-030" inputmode="verbatim">
+                        <input type="tel" id="tel" inputmode="tel">
                         <label for="message">Mensagem</label>
-                        <textarea id="message" cols="30" rows="5"></textarea>
+                        <textarea id="message" cols="30" rows="2"></textarea>
                         <div class="buttons">
                             <button>Enviar</button>
                         </div>

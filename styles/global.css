@@ -12,8 +12,10 @@ html {
     --grey-light: #eee;
     --grey: #C4C4C4;
     --white: #FAFAFA;
+    --red: #F00038;
     --orange: #E65100;
     --yellow: #FFC301;
+    --green: #2cb133;
     --blue: #2C7CB1;
     --purple: #482680;
     /*1rem = 16px (User agent) = 100% (User agent)*/

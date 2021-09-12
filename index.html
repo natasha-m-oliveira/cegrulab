@@ -80,7 +80,7 @@
                 </div>
                 <div class="space"></div>
                 <div class="services title" id="services">
-                    <h2>Entenda como podemos<br />te ajudar a inovar!</h2>
+                    <h2 data-services-title>Entenda como podemos<br />te ajudar a inovar!</h2>
                 </div>
                 <div class="left services">
                     <img src="./images/startup-leader.jpg" alt="Startup Leader">
@@ -92,7 +92,7 @@
                             para desenvolvê-las como negócios. As startups locais têm acesso a um espaço completo e
                             acesso à networking. Além de poderem usar o CEGRULAB como vitrine de seu trabalho para as
                             grandes empresas.</p>
-                        <a class="button">TENHO INTERESSE!</a>
+                        <a href="#contact" class="button">TENHO INTERESSE!</a>
                     </div>
                 </div>
                 <div class="left services text-box">
@@ -102,7 +102,7 @@
                             diversos possíveis graus de inovação. O método consiste em 5 etapas de relatórios sobre
                             inovação, direcionados a públicos distintos da sua empresa, na busca de analisar junto a
                             todo o time as forças e fraquezas internas e externas.</p>
-                        <a class="button">TENHO INTERESSE!</a>
+                        <a href="#contact" class="button">TENHO INTERESSE!</a>
                     </div>
                 </div>
                 <div class="right services">
@@ -118,13 +118,13 @@
                         <p>​​É o início de uma jornada inovadora que apresenta metodologias ágeis e entrega à sua
                             empresa ferramentas de gestão novas e relevantes. A partir da união de representantes das
                             empresas parceiras, iremos propor soluções usando Design Thinking.</p>
-                        <a class="button">TENHO INTERESSE!</a>
+                        <a href="#contact" class="button">TENHO INTERESSE!</a>
                     </div>
                 </div>
                 <div class="space"></div>
                 <div class="box" id="team">
                     <div class="title">
-                        <h2>Conheça o time que vai<br />ajudar sua empresa!</h2>
+                        <h2 data-team-title>Conheça o time que vai<br />ajudar sua empresa!</h2>
                     </div>
                     <div class="container-slide active">
                         <div class="slide">
@@ -135,7 +135,7 @@
                                 <div class="text-box">
                                     <h3>Luisa Camerini</h3>
                                     <p>Marketing</p>
-                                    <a class="button">ENTRAR EM CONTATO</a>
+                                    <a href="#contact" class="button">ENTRAR EM CONTATO</a>
                                 </div>
                             </div>
                         </div>
@@ -149,7 +149,7 @@
                                 <div class="text-box">
                                     <h3>Rodrigo Fukunaro</h3>
                                     <p>Business Design</p>
-                                    <a class="button">ENTRAR EM CONTATO</a>
+                                    <a href="#contact" class="button">ENTRAR EM CONTATO</a>
                                 </div>
                             </div>
                         </div>
@@ -162,8 +162,8 @@
                             <div class="right">
                                 <div class="text-box">
                                     <h3>Matteo Ritacco</h3>
-                                    <p>Gerente de Comunidade</p>
-                                    <a class="button">ENTRAR EM CONTATO</a>
+                                    <p>Gerente de Comunicação</p>
+                                    <a href="#contact" class="button">ENTRAR EM CONTATO</a>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +177,7 @@
                                 <div class="text-box">
                                     <h3>Miguel Sanchez</h3>
                                     <p>Facilities</p>
-                                    <a class="button">ENTRAR EM CONTATO</a>
+                                    <a href="#contact" class="button">ENTRAR EM CONTATO</a>
                                 </div>
                             </div>
                         </div>
@@ -193,7 +193,7 @@
                 </div>
                 <div class="space"></div>
                 <div class="coworking title" id="coworking">
-                    <h2>Faça parte do nosso<br />coworking e expanda<br />seus horizontes!</h2>
+                    <h2 data-coworking-title>Faça parte do nosso<br />coworking e expanda<br />seus horizontes!</h2>
                 </div>
                 <div class="left coworking">
                     <p>Somos um hub de inovação, ou seja, somos responsáveis por trazer inovação para a cidade de
@@ -209,18 +209,21 @@
                         <h1>Entre em contato</h1>
                     </div>
                 </div>
+                <div class="notification">
+                    <div id="toasts"></div>
+                </div>
                 <div class="form">
                     <form action="" class="">
                         <label for="nome">Nome *</label>
-                        <input type="text" id="nome" inputmode="verbatim">
+                        <input type="text" id="nome" inputmode="verbatim" required data-type="name">
                         <label for="email">Email *</label>
-                        <input type="email" id="email" inputmode="email">
+                        <input type="email" id="email" inputmode="email" required data-type="email">
                         <label for="tel">Telefone *</label>
-                        <input type="tel" id="tel" inputmode="tel">
+                        <input type="tel" id="tel" inputmode="tel" required data-type="phone">
                         <label for="message">Mensagem</label>
                         <textarea id="message" cols="30" rows="2"></textarea>
                         <div class="buttons">
-                            <button>Enviar</button>
+                            <button data-submit-form>Enviar</button>
                         </div>
                     </form>
                 </div>
@@ -245,6 +248,8 @@
     </div>
     <script src="./scripts/global.js"></script>
     <script src="./scripts/home.js"></script>
+    <script src="./scripts/slides.js"></script>
+    <script src="./scripts/app.js" type="module"></script>
 </body>
 
 </html>

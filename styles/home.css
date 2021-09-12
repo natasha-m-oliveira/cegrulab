@@ -66,7 +66,8 @@ main .container {
 }
 
 .container .left.about {
-    width: 40rem;
+    width: 45rem;
+    padding: 0 3rem;
 }
 
 .container .about h2 {
@@ -77,13 +78,13 @@ main .container {
 }
 
 .container .about .button {
-    margin: 5rem auto 0;
+    margin: 5rem auto;
     font-weight: 700;
     max-width: 30rem;
 }
 
 .container .about img {
-    width: 60rem;
+    width: 55rem;
 }
 
 /*Services*/
@@ -320,11 +321,52 @@ html {
     margin-bottom: 2rem;
 }
 
+.container .form input.invalid {
+    border-bottom: .2rem solid var(--red);
+}
+
 .container .form button {
     width: 100%;
     margin-top: 2rem;
     font-size: 2rem;
     font-weight: bolder;
+}
+
+/*Toasts*/
+
+.container .notification {
+    height: 100vh;
+    position: absolute;
+    z-index: 1000;
+}
+
+.container .notification #toasts {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.container .notification .toast {
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    font-weight: 700;
+}
+
+.container .notification .toast.info {
+    color: var(--blue);
+}
+
+.container .notification .toast.success {
+    color: var(--green);
+}
+
+.container .notification .toast.error {
+    color: var(--red);
 }
 
 /*Footer*/
@@ -340,6 +382,7 @@ footer .first-line {
     justify-content: space-between;
     align-items: center;
     padding: 1% 5%;
+    margin-top: 1rem;
     position: relative;
     color: var(--grey);
 }
@@ -369,7 +412,7 @@ footer .social-item:hover {
     background: url("../images/instagram-logo.svg");
 }
 
-#instagram:hover{
+#instagram:hover {
     background: url("../images/instagram-logo-yellow.svg");
 }
 
@@ -387,15 +430,15 @@ footer .second-line {
     border-top: .15px solid var(--grey);
 }
 
-footer .second-line p{
+footer .second-line p {
     text-align: center;
 }
 
-footer .second-line a{
+footer .second-line a {
     color: var(--white);
 }
 
-footer .second-line a:hover{
+footer .second-line a:hover {
     color: var(--yellow);
 }
 

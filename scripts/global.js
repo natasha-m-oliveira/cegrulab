@@ -1,6 +1,5 @@
 const menuItems = document.querySelectorAll("[data-menu-item]");
 const btnMobile = document.querySelector("[data-btn-mobile]");
-const body = document.querySelector("body");
 
 menuItems.forEach(menuItemClick => {
     menuItemClick.addEventListener("click", () => {
@@ -11,7 +10,6 @@ menuItems.forEach(menuItemClick => {
             });
             menuItemClick.classList.add("current");
         }
-        body.classList.remove("menu-active");
         const nav = document.querySelector("[data-nav]");
         nav.classList.remove("active");
         btnMobile.currentTarget.setAttribute("aria-label", "Abrir menu")
@@ -31,10 +29,9 @@ function toggleMenu(event) {
     event.currentTarget.setAttribute("aria-expanded", active)
     if(active){
         event.currentTarget.setAttribute("aria-label", "Fechar menu")
-        body.classList.add("menu-active");
+        html
     }else{
         event.currentTarget.setAttribute("aria-label", "Abrir menu")
-        body.classList.remove("menu-active");
     }
 }
 

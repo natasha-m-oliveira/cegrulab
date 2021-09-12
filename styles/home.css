@@ -1,8 +1,8 @@
 .content {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 11.4rem 1fr;
-    grid-template-areas: "header" "main"
+    grid-template-rows: 11.4rem 1fr 15rem;
+    grid-template-areas: "header" "main" "footer"
 }
 
 header {
@@ -94,7 +94,8 @@ main .container {
     margin-bottom: 10rem;
     padding: 0 4rem;
 }
-.container .services.title h2{
+
+.container .services.title h2 {
     font-size: 6rem;
     font-weight: 600;
     line-height: 6rem;
@@ -139,7 +140,7 @@ html {
     scroll-margin-top: 5rem;
 }
 
-/*Image Slider*/
+/*Image Slide*/
 
 .container .box {
     position: relative;
@@ -152,7 +153,7 @@ html {
     margin-bottom: 5rem;
 }
 
-.container .box .title h2{
+.container .box .title h2 {
     font-size: 6rem;
     font-weight: 600;
     line-height: 6rem;
@@ -193,14 +194,16 @@ html {
 }
 
 .container .container-slide .slide {
+    width: 100%;
+    margin-bottom: 2rem;
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: auto;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    padding: 2rem;
 }
 
-.container .container-slide .slide .text-box {
+.container .container-slide .slide .right {
     animation: slideContent 0.4s linear 0.6s backwards;
 }
 
@@ -211,7 +214,7 @@ html {
     }
 }
 
-.container .container-slide .slide .image {
+.container .container-slide .slide .left {
     animation: slideImage 0.4s linear;
 }
 
@@ -222,15 +225,20 @@ html {
     }
 }
 
-.container .container-slide .slide .text-box, .image {
-    flex: 1 1 50rem;
-    padding: 3rem;
+.container .container-slide .slide .left, .right {
+    width: min(50rem, 100%);
     text-align: center;
 }
 
-.container .container-slide .slide .image img {
+.container .container-slide .slide .right {
+    background: var(--grey);
+    height: 41.6rem;
+    color: var(--purple);
+}
+
+.container .container-slide .slide .left img {
     width: 100%;
-    max-width: 80rem;
+    max-width: 50rem;
 }
 
 .container .container-slide .slide .text-box p, .button {
@@ -240,7 +248,7 @@ html {
 .container .container-slide .slide .text-box .button {
     width: 25rem;
     font-weight: 700;
-    background: var(--orange);
+    background: var(--purple);
     color: var(--white);
 }
 
@@ -263,7 +271,7 @@ html {
     transition: 0.4s;
 }
 
-.container .box .indicator .btn.active{
+.container .box .indicator .btn.active {
     width: 4.5rem;
 }
 
@@ -284,7 +292,8 @@ html {
     padding: 0 4rem;
     margin-bottom: -10rem;
 }
-.container .coworking.title h2{
+
+.container .coworking.title h2 {
     font-size: 6rem;
     font-weight: 600;
     line-height: 6rem;
@@ -311,33 +320,122 @@ html {
     margin-bottom: 2rem;
 }
 
-.container .form button{
+.container .form button {
     width: 100%;
     margin-top: 2rem;
     font-size: 2rem;
     font-weight: bolder;
 }
 
+/*Footer*/
+
+footer {
+    grid-area: footer;
+    background: #2e2e2e;
+    border-radius: 0;
+}
+
+footer .first-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+    position: relative;
+    color: var(--grey);
+}
+
+footer .social-media {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+
+footer .social-item {
+    width: 3rem;
+    height: 3rem;
+    background-position: center !important;
+    background-size: contain !important;
+    margin: 0 0.5rem;
+    background-repeat: no-repeat !important;
+    transition: all 0.3s;
+}
+
+footer .social-item:hover {
+    width: 3.1rem;
+    height: 3.1rem;
+}
+
+#instagram {
+    background: url("../images/instagram-logo.svg");
+}
+
+#instagram:hover{
+    background: url("../images/instagram-logo-yellow.svg");
+}
+
+#linkedin {
+    background: url("../images/linkedin-logo.svg");
+}
+
+#linkedin:hover {
+    background: url("../images/linkedin-logo-yellow.svg");
+}
+
+footer .second-line {
+    margin-top: 1rem;
+    border-radius: 0;
+    border-top: .15px solid var(--grey);
+}
+
+footer .second-line p{
+    text-align: center;
+}
+
+footer .second-line a{
+    color: var(--white);
+}
+
+footer .second-line a:hover{
+    color: var(--yellow);
+}
+
 @media (max-width: 60rem) {
     main .container {
         width: 100%;
+        margin: 0;
         overflow-x: hidden;
+        padding: 0;
     }
     .container .space {
         height: 5rem;
     }
     .container .about {
+        margin: 0;
+        padding: 0 3rem;
         min-height: 30rem;
     }
-    .container .outset, .left.about, .services {
+    .container .outset, .services, .coworking {
         width: 100%;
         margin: 0;
         padding: 0;
     }
-    .container .outset h1 {
-        font-size: 6rem;
+    .container .outset {
+        padding: 0 3rem;
     }
-    .container .about h2, .services.title h2 {
+    .container .outset h1 {
+        font-size: 5rem;
+    }
+    .container .about h2 {
+        font-size: 4rem;
+    }
+    .container .services.title h2 {
+        font-size: 4rem;
+        padding: 0 3rem;
+    }
+    .container .box .title h2 {
+        font-size: 4rem;
+    }
+    .container .coworking.title h2 {
         font-size: 4rem;
     }
     .container .services.title {
@@ -348,9 +446,13 @@ html {
     }
     .container .services {
         width: 80%;
+        margin: 2rem 0;
+    }
+    .container .services.title {
+        padding: 0;
     }
     .container .about img {
-        width: 80%;
+        width: 100%;
     }
     .container .box #prev {
         left: 0;
@@ -360,10 +462,19 @@ html {
         right: -6rem;
         top: 60%;
     }
-    .container .left.coworking{
+    /* .container .container-slide .slide .left, .right{
+        width: 40rem;
+    } */
+    .container .container-slide .slide .right {
+        height: auto;
+    }
+    .container .container-slide .slide .text-box {
+        margin: 2rem 0;
+    }
+    .container .left.coworking {
         width: 100%;
     }
-    .container .coworking.title{
+    .container .coworking.title {
         padding: 0;
         margin-bottom: 0;
     }

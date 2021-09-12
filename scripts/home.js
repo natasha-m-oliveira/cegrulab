@@ -1,8 +1,11 @@
 let slides = document.querySelectorAll(".container-slide");
 let buttons = document.querySelectorAll("[data-btn]");
+let imagesSlides = document.querySelectorAll("[data-image-slide]");
 const prev = document.querySelector("[data-prev]");
 const next = document.querySelector("[data-next]");
 let index = 0;
+let pointerPosition;
+let isMove = false;
 
 buttons.forEach((button, index) => {
     button.addEventListener("click", () => {
@@ -13,6 +16,11 @@ buttons.forEach((button, index) => {
         slides[index].classList.add("active");
         buttons[index].classList.add("active");
     });
+});
+
+imagesSlides.forEach(ImageSlide => {
+    ImageSlide.addEventListener("touchmove", touchMove);
+    ImageSlide.addEventListener("touchend", touchEnd);
 });
 
 function toNext(event) {
@@ -41,6 +49,27 @@ function toPrev(event) {
     index = (index - 1 + slides.length) % slides.length;
     slides[index].classList.add("active");
     buttons[index].classList.add("active");
+}
+
+function touchMove(event) {
+    pointerPosition = event.changedTouches[0].clientX;
+    isMove = true;
+}
+
+function touchEnd() {
+    if(isMove) {
+        controllerSlider(pointerPosition);
+    }
+    isMove = false;
+}
+
+function controllerSlider(pointerPosition) {
+    let windowSize = document.querySelector(".container-slide.active").offsetWidth / 2;
+    if (pointerPosition > windowSize) {
+        toNext("click");
+    } else if (pointerPosition < windowSize) {
+        toPrev("click");
+    }
 }
 
 function autoplay() {

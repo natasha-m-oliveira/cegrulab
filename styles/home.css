@@ -25,84 +25,81 @@ main .container {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 90%;
-    padding: 2rem;
+    width: 80%;
 }
 
-.container .left, .right {
+.left, .right {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container .space {
+.space {
     width: 100%;
     position: relative;
     height: 10rem;
 }
 
-/*Outset*/
-
-.container .outset {
-    width: 50rem;
-}
-
-.container .outset h1 {
+h1 {
     font-size: 8rem;
-    line-height: 6rem;
+    line-height: 7rem;
+    font-weight: 400;
     margin-bottom: 2rem;
 }
 
-.container .outset img {
+h2 {
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 6rem;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 6rem;
+}
+
+/*Outset*/
+
+.outset {
+    width: 50%;
+}
+
+.outset img {
     width: 100%;
 }
 
 /*About*/
 
-.container .about {
-    margin: 2rem;
+.about {
     min-height: 60rem;
+    width: 50%;
 }
 
-.container .left.about {
-    width: 45rem;
-    padding: 0 3rem;
-}
-
-.container .about h2 {
-    font-size: 6rem;
-    font-weight: 600;
-    line-height: 6rem;
+.about h2 {
     margin-bottom: 2rem;
 }
 
-.container .about .button {
+.about .button {
     margin: 5rem auto;
     font-weight: 700;
     max-width: 30rem;
 }
 
-.container .about img {
-    width: 55rem;
+.about img {
+    width: 100%;
 }
 
 /*Services*/
 
-.container .services.title {
+.services.title {
     width: 100%;
     text-align: right;
-    margin-bottom: 10rem;
-    padding: 0 4rem;
+    margin-bottom: 5rem;
 }
 
-.container .services.title h2 {
-    font-size: 6rem;
-    font-weight: 600;
-    line-height: 6rem;
-}
-
-.container .services {
+.services {
     width: 50rem;
     margin: 2rem;
 }
@@ -119,9 +116,6 @@ main .container {
 }
 
 .container .services h3 {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 6rem;
     margin-bottom: 1rem;
 }
 
@@ -145,19 +139,13 @@ html {
 
 .container .box {
     position: relative;
-    width: 90%;
+    width: 100%;
 }
 
 .container .box .title {
     width: 100%;
     text-align: left;
     margin-bottom: 5rem;
-}
-
-.container .box .title h2 {
-    font-size: 6rem;
-    font-weight: 600;
-    line-height: 6rem;
 }
 
 .container .container-slide {
@@ -252,6 +240,9 @@ html {
     background: var(--purple);
     color: var(--white);
 }
+.container .container-slide .slide .button{
+    z-index: 1;
+}
 
 .container .box .indicator {
     position: relative;
@@ -278,54 +269,41 @@ html {
 
 /*Coworking*/
 
-.container .coworking {
-    margin: 2rem;
-}
-
-.container .left.coworking {
-    width: 40%;
+.coworking {
+    width: 50%;
     text-align: left;
 }
 
 .container .coworking.title {
     width: 100%;
-    text-align: left;
-    padding: 0 4rem;
     margin-bottom: -10rem;
-}
-
-.container .coworking.title h2 {
-    font-size: 6rem;
-    font-weight: 600;
-    line-height: 6rem;
 }
 
 .container .coworking img {
     width: 100%;
-    max-width: 50rem;
 }
 
 /*Form*/
 
-.container .form, .overlay {
+.contact {
     border-radius: 1rem;
-    padding: 5rem 2rem;
-    width: min(50rem, 100%);
+    padding: 5rem 0;
+    width: 50%;
 }
 
-.container .overlay {
+.container .contact h2 {
     text-align: center;
 }
 
-.container .form input {
+.container .contact input {
     margin-bottom: 2rem;
 }
 
-.container .form input.invalid {
+.container .contact input.invalid {
     border-bottom: .2rem solid var(--red);
 }
 
-.container .form button {
+.container .contact button {
     width: 100%;
     margin-top: 2rem;
     font-size: 2rem;
@@ -373,7 +351,8 @@ html {
 
 footer {
     grid-area: footer;
-    background: #2e2e2e;
+    /* background: black; */
+    background: linear-gradient(var(--purple), var(--blue));
     border-radius: 0;
 }
 
@@ -424,6 +403,14 @@ footer .social-item:hover {
     background: url("../images/linkedin-logo-yellow.svg");
 }
 
+#whatsapp {
+    background: url("../images/whatsapp-logo.svg");
+}
+
+#whatsapp:hover {
+    background: url("../images/whatsapp-logo-yellow.svg");
+}
+
 footer .second-line {
     margin-top: 1rem;
     border-radius: 0;
@@ -447,55 +434,34 @@ footer .second-line a:hover {
         width: 100%;
         margin: 0;
         overflow-x: hidden;
-        padding: 0;
+        padding: 0 2rem;
     }
     .container .space {
         height: 5rem;
     }
-    .container .about {
-        margin: 0;
-        padding: 0 3rem;
-        min-height: 30rem;
+    .container h1 {
+        font-size: 5rem;
     }
-    .container .outset, .services, .coworking {
+    .container h2 {
+        font-size: 4rem;
+    }
+    .container .outset, .about, .services, .coworking, .contact {
         width: 100%;
         margin: 0;
         padding: 0;
     }
-    .container .outset {
-        padding: 0 3rem;
+    .container .about {
+        min-height: 30rem;
     }
-    .container .outset h1 {
-        font-size: 5rem;
-    }
-    .container .about h2 {
-        font-size: 4rem;
-    }
-    .container .services.title h2 {
-        font-size: 4rem;
-        padding: 0 3rem;
-    }
-    .container .box .title h2 {
-        font-size: 4rem;
-    }
-    .container .coworking.title h2 {
-        font-size: 4rem;
+    .container .services {
+        margin: 2rem 0;
+        padding: 0;
     }
     .container .services.title {
         margin-bottom: 2rem;
     }
-    .container .outset img {
-        width: 80%;
-    }
-    .container .services {
-        width: 80%;
-        margin: 2rem 0;
-    }
-    .container .services.title {
-        padding: 0;
-    }
-    .container .about img {
-        width: 100%;
+    .container .box {
+        padding: 0 1rem;
     }
     .container .box #prev {
         left: 0;
@@ -505,9 +471,6 @@ footer .second-line a:hover {
         right: -6rem;
         top: 60%;
     }
-    /* .container .container-slide .slide .left, .right{
-        width: 40rem;
-    } */
     .container .container-slide .slide .right {
         height: auto;
     }

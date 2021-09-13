@@ -1,8 +1,16 @@
+const buttonSubmit = document.querySelector("[data-submit-form]");
+const inputOrigin = document.querySelector("#origin");
 const servicesTitle = document.querySelector("[data-services-title");
 const teamTitle = document.querySelector("[data-team-title");
 const coworkingTitle = document.querySelector("[data-coworking-title");
 const inputPhone = document.querySelector("#tel");
 let windowSize = window.innerWidth;
+
+function submitForm(event) {
+    event.preventDefault();
+    let origin = window.location.hash.replace("#", "");
+    inputOrigin.value = origin;
+}
 
 function glamTitle(windowSize) {
     if (windowSize > 600) {
@@ -26,4 +34,6 @@ inputPhone.addEventListener("input", (e) => {
     e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
 });
 
+buttonSubmit.addEventListener("click", submitForm);
+buttonSubmit.addEventListener("touchstart", submitForm);
 glamTitle(windowSize);

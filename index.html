@@ -135,7 +135,7 @@
                                 <div class="text-box">
                                     <h3>Luisa Camerini</h3>
                                     <p>Marketing</p>
-                                    <a href="#contact" class="button">ENTRAR EM CONTATO</a>
+                                    <a href="#contact" class="button" data-btn-anchor>ENTRAR EM CONTATO</a>
                                 </div>
                             </div>
                         </div>
@@ -149,7 +149,7 @@
                                 <div class="text-box">
                                     <h3>Rodrigo Fukunaro</h3>
                                     <p>Business Design</p>
-                                    <a href="#contact" class="button">ENTRAR EM CONTATO</a>
+                                    <a href="#contact" class="button" data-btn-anchor>ENTRAR EM CONTATO</a>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +163,7 @@
                                 <div class="text-box">
                                     <h3>Matteo Ritacco</h3>
                                     <p>Gerente de Comunicação</p>
-                                    <a href="#contact" class="button">ENTRAR EM CONTATO</a>
+                                    <a href="#contact" class="button" data-btn-anchor>ENTRAR EM CONTATO</a>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +177,7 @@
                                 <div class="text-box">
                                     <h3>Miguel Sanchez</h3>
                                     <p>Facilities</p>
-                                    <a href="#contact" class="button">ENTRAR EM CONTATO</a>
+                                    <a href="#contact" class="button" data-btn-anchor>ENTRAR EM CONTATO</a>
                                 </div>
                             </div>
                         </div>
@@ -204,18 +204,19 @@
                     <img src="./images/building-structure.png" alt="Estrutura predial">
                 </div>
                 <div class="space"></div>
-                <div class="overlay" id="contact">
+                <div class="contact" id="contact">
                     <div class="panel">
-                        <h1>Entre em contato</h1>
+                        <h2>Entre em contato</h2>
                     </div>
                 </div>
                 <div class="notification">
                     <div id="toasts"></div>
                 </div>
-                <div class="form">
-                    <form action="" class="">
-                        <label for="nome">Nome *</label>
-                        <input type="text" id="nome" inputmode="verbatim" required data-type="name">
+                <div class="contact form">
+                    <form action="">
+                        <input type="text" id="origin" class="sr-only" readonly>
+                        <label for="name">Nome *</label>
+                        <input type="text" id="name" inputmode="verbatim" required data-type="name">
                         <label for="email">Email *</label>
                         <input type="email" id="email" inputmode="email" required data-type="email">
                         <label for="tel">Telefone *</label>
@@ -234,11 +235,12 @@
                 <div class="address">
                     <p>CEGRULAB</p>
                     <p>Rua Força Pública, 89 - Centro - Guarulhos - SP</p>
-                    <p>(11) 2472-5500</p>
+                    <p>(11) 94595-6773</p>
                 </div>
                 <div class="social-media">
                     <a href="https://www.instagram.com/cegru.lab/" class="social-item" id="instagram"></a>
                     <a href="https://www.linkedin.com/company/261615" class="social-item" id="linkedin"></a>
+                    <a href="https://wa.me/5511945956773" class="social-item" id="whatsapp"></a>
                 </div>
             </div>
             <div class="second-line">

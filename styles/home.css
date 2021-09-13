@@ -66,6 +66,10 @@ h3 {
     width: 50%;
 }
 
+.right.outset {
+    width: 50%;
+}
+
 .outset img {
     width: 100%;
 }
@@ -74,6 +78,10 @@ h3 {
 
 .about {
     min-height: 60rem;
+    width: 50%;
+}
+
+.right.about {
     width: 50%;
 }
 
@@ -214,7 +222,7 @@ html {
     }
 }
 
-.container .container-slide .slide .left, .right {
+.container .box .container-slide .slide .left, .right {
     width: min(50rem, 100%);
     text-align: center;
 }
@@ -240,7 +248,8 @@ html {
     background: var(--purple);
     color: var(--white);
 }
-.container .container-slide .slide .button{
+
+.container .container-slide .slide .button {
     z-index: 1;
 }
 
@@ -450,6 +459,9 @@ footer .second-line a:hover {
         margin: 0;
         padding: 0;
     }
+    .container .right.about {
+        width: 100%;
+    }
     .container .about {
         min-height: 30rem;
     }
@@ -483,5 +495,8 @@ footer .second-line a:hover {
     .container .coworking.title {
         padding: 0;
         margin-bottom: 0;
+    }
+    .container .contact {
+        margin-bottom: 2rem;
     }
 }

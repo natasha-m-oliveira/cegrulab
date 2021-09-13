@@ -55,7 +55,6 @@ function validateName(input) {
         const fullName = /[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ][ ][A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]/;
         let message = "";
         if (!(fullName.test(value))) {
-            console.log(value)
             message = messages[1];
         }
         //Para exibir a mensagem de erro
@@ -80,7 +79,7 @@ function validatePhone(input) {
     if (value !== "") {
         let phoneSet = value.replace(/[^0-9]/g, "");
         let message = "";
-        if (phoneSet.lengh >= 10) {
+        if (phoneSet.length <= 10) {
             message = messages[3];
         }
         input.setCustomValidity(message);
@@ -93,6 +92,5 @@ function showErrorMessage(inputType, input) {
     errorTypes.forEach(error => {
         if (input.validity[error]) message = errorMessages[inputType][error];
     });
-    console.log(message);
     return message;
 }

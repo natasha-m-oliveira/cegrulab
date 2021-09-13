@@ -11,8 +11,11 @@ menuItems.forEach(menuItemClick => {
             menuItemClick.classList.add("current");
         }
         const nav = document.querySelector("[data-nav]");
+        let windowSize = window.innerWidth;
         nav.classList.remove("active");
-        btnMobile.currentTarget.setAttribute("aria-label", "Abrir menu");
+        if(windowSize <= 600){
+            btnMobile.currentTarget.setAttribute("aria-label", "Abrir menu");
+        }
     });
 });
 
@@ -30,7 +33,6 @@ function toggleMenu(event) {
     if (active) {
         body.classList.add("menu-active");
         event.currentTarget.setAttribute("aria-label", "Fechar menu");
-        html
     } else {
         body.classList.remove("menu-active");
         event.currentTarget.setAttribute("aria-label", "Abrir menu");

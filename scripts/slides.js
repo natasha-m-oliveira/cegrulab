@@ -40,8 +40,7 @@ function toGo(event) {
         event.preventDefault();
     }
     const destination = "#contact";
-    let url = window.location.origin;
-    location.href = url + destination;
+    location.href = destination;
 }
 
 function toNext(event) {

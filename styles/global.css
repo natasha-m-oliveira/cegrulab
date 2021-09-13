@@ -22,14 +22,16 @@ html {
     font-size: 62.5%;
     /*10px*/
     transition: all 0.5s ease-in;
-    overflow: hidden;
 }
 
 body {
     display: flex;
-    height: 100vh;
     background: var(--purple);
     overflow: auto;
+}
+
+body.menu-active{
+    overflow: hidden;
 }
 
 /*input and buttons*/

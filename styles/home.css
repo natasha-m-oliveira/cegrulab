@@ -66,10 +66,6 @@ h3 {
     width: 50%;
 }
 
-.right.outset {
-    width: 50%;
-}
-
 .outset img {
     width: 100%;
 }
@@ -78,10 +74,6 @@ h3 {
 
 .about {
     min-height: 60rem;
-    width: 50%;
-}
-
-.right.about {
     width: 50%;
 }
 
@@ -222,38 +214,35 @@ html {
     }
 }
 
-.container .box .container-slide .slide .left, .right {
-    width: min(50rem, 100%);
+.slide .left,
+.slide .right {
+    width: 50rem;
     text-align: center;
 }
 
-.container .container-slide .slide .right {
+.slide .right {
     background: var(--grey);
     height: 41.6rem;
     color: var(--purple);
 }
 
-.container .container-slide .slide .left img {
+.slide .left img {
     width: 100%;
     max-width: 50rem;
 }
 
-.container .container-slide .slide .text-box p, .button {
+.slide .text-box p, .button {
     margin: 5rem auto 0;
 }
 
-.container .container-slide .slide .text-box .button {
+.slide .text-box .button {
     width: 25rem;
     font-weight: 700;
     background: var(--purple);
     color: var(--white);
 }
 
-.container .container-slide .slide .button {
-    z-index: 1;
-}
-
-.container .box .indicator {
+.box .indicator {
     position: relative;
     display: flex;
     align-items: center;
@@ -261,7 +250,7 @@ html {
     margin-left: 0.5rem;
 }
 
-.container .box .indicator .btn {
+.box .indicator .btn {
     display: inline-block;
     height: 1.5rem;
     width: 1.5rem;
@@ -272,7 +261,7 @@ html {
     transition: 0.4s;
 }
 
-.container .box .indicator .btn.active {
+.box .indicator .btn.active {
     width: 4.5rem;
 }
 
@@ -358,7 +347,7 @@ html {
 
 /*Footer*/
 
-footer {
+.content footer {
     grid-area: footer;
     /* background: black; */
     background: linear-gradient(var(--purple), var(--blue));
@@ -442,7 +431,6 @@ footer .second-line a:hover {
     main .container {
         width: 100%;
         margin: 0;
-        overflow-x: hidden;
         padding: 0 2rem;
     }
     .container .space {

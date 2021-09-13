@@ -125,16 +125,6 @@ h3 {
     color: var(--white);
 }
 
-/*Âncoras*/
-
-html {
-    scroll-behavior: smooth;
-}
-
-:target {
-    scroll-margin-top: 5rem;
-}
-
 /*Image Slide*/
 
 .container .box {

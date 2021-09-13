@@ -27,7 +27,6 @@ html {
 body {
     display: flex;
     background: var(--purple);
-    overflow: auto;
 }
 
 body.menu-active{
@@ -141,6 +140,17 @@ button:hover, .button:hover {
 ::-webkit-scrollbar-thumb {
     background: var(--yellow);
     border-radius: 1rem;
+}
+
+/*Âncoras*/
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: auto;
+}
+
+:target {
+    scroll-margin-top: 5rem;
 }
 
 @media (max-width: 60rem) {

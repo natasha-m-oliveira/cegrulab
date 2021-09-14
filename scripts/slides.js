@@ -78,11 +78,12 @@ function touchStart(event) {
     startY = touchobj.pageY;
     startTime = new Date().getTime(); // o momento em que o dedo faz contato pela primeira vez com a tela
     isMove = true;
-    event.preventDefault();
+    // event.preventDefault();
+    // evitar a rolagem quando dentro do div
 }
 
 function touchMove(event) {
-    event.preventDefault() // evitar a rolagem quando dentro do div
+    // event.preventDefault() // evitar a rolagem quando dentro do div
 }
 
 function touchEnd(event) {

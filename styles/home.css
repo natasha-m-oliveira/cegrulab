@@ -469,6 +469,7 @@ footer .second-line a:hover {
     }
     .container .left.coworking {
         width: 100%;
+        margin-bottom: 4rem;
     }
     .container .coworking.title {
         padding: 0;

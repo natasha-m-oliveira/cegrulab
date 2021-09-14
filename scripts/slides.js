@@ -7,7 +7,7 @@ let slides = document.querySelectorAll(".container-slide"),
     startX,
     startY,
     dist,
-    threshold = 150, // distância mínima percorrida necessária para ser considerado slide
+    threshold = 50, // distância mínima percorrida necessária para ser considerado slide
     allowedTime = 300, // tempo máximo permitido para percorre essa distância
     elapsedTime,
     startTime,
@@ -30,6 +30,8 @@ buttons.forEach((button, index) => {
 });
 
 slides.forEach(slide => {
+    slide.addEventListener("mouseover", mouveOver);
+    slide.addEventListener("mouseout", mouseOut);
     slide.addEventListener("touchstart", touchStart);
     slide.addEventListener("touchmove", touchMove);
     slide.addEventListener("touchend", touchEnd);
@@ -100,6 +102,14 @@ function touchEnd(event) {
     isMove = false;
     controllerSlider(slideDirection);
     event.preventDefault();
+}
+
+function mouveOver(){
+    isMove = true;
+}
+
+function mouseOut(){
+    isMove = false;
 }
 
 function controllerSlider(slideDirection) {

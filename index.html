@@ -25,22 +25,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--CSS-->
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./assets/styles/global.css">
+    <link rel="stylesheet" href="./assets/styles/home.css">
 
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!--ICON-->
-    <link rel="icon" href="./images/logo.svg">
+    <link rel="icon" href="./assets/images/logo.svg">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet" />
 
 </head>
 
 <body>
     <div id="home" class="content" id="outset">
         <header>
-            <img src="./images/header-logo.svg" alt="CEGRULAB LOGO" class="logo">
+            <img src="./assets/images/header-logo.svg" alt="CEGRULAB LOGO" class="logo">
             <nav role="navigation" class="nav" data-nav>
                 <button aria-label="Abrir menu" class="btn-mobile" data-btn-mobile aria-haspopup="true"
                     aria-controls="menu" aria-expanded="false">Menu <span class="burger"></span></button>
@@ -50,11 +51,15 @@
                     <li><a href="#coworking" data-menu-item>COWORKING</a></li>
                     <li><a href="#services" data-menu-item>SERVIÇOS</a></li>
                     <li><a href="#contact" data-menu-item>CONTATO</a></li>
+                    <li><a href="business-council.html" data-menu-item>CONSELHO EMPRESARIAL</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <div class="container">
+                <div class="anchor">
+                    <a href="#" id="top-of-page" class="button" data-anchor></a>
+                </div>
                 <div class="left outset">
                     <div class="description">
                         <h1>Um ecossistema para superar desafios através da inovação</h1>
@@ -62,7 +67,7 @@
                     </div>
                 </div>
                 <div class="right outset">
-                    <img src="./images/outset.svg" alt="">
+                    <img src="./assets/images/outset.svg" alt="">
                 </div>
                 <div class="space"></div>
                 <div class="left about" id="about">
@@ -76,14 +81,14 @@
                     </div>
                 </div>
                 <div class="right about">
-                    <img src="./images/group-business-executives-discussing.jpg" alt="Grupo de executivos discutindo">
+                    <img src="./assets/images/group-business-executives-discussing.jpg" alt="Grupo de executivos discutindo">
                 </div>
                 <div class="space"></div>
                 <div class="services title" id="services">
                     <h2 data-services-title>Entenda como podemos<br />te ajudar a inovar!</h2>
                 </div>
                 <div class="left services">
-                    <img src="./images/startup-leader.jpg" alt="Startup Leader">
+                    <img src="./assets/images/startup-leader.jpg" alt="Startup Leader">
                 </div>
                 <div class="right services text-box">
                     <div class="description">
@@ -106,10 +111,10 @@
                     </div>
                 </div>
                 <div class="right services">
-                    <img src="./images/business-people-meeting.jpg" alt="Encontro de Empresários">
+                    <img src="./assets/images/business-people-meeting.jpg" alt="Encontro de Empresários">
                 </div>
                 <div class="left services">
-                    <img src="./images/business-people-shaking-hands-together.jpg"
+                    <img src="./assets/images/business-people-shaking-hands-together.jpg"
                         alt="Aperto de Mãos Entre Empresários">
                 </div>
                 <div class="right services text-box">
@@ -129,7 +134,7 @@
                     <div class="container-slide active">
                         <div class="slide">
                             <div class="left" data-image-slide>
-                                <img src="./images/luisa-camerini.jpg" alt="Luisa Camerini">
+                                <img src="./assets/images/luisa-camerini.jpg" alt="Luisa Camerini">
                             </div>
                             <div class="right">
                                 <div class="text-box">
@@ -143,7 +148,7 @@
                     <div class="container-slide">
                         <div class="slide">
                             <div class="left" data-image-slide>
-                                <img src="./images/rodrigo-fukunaro.jpg" alt="Rodrigo Fukunaro">
+                                <img src="./assets/images/rodrigo-fukunaro.jpg" alt="Rodrigo Fukunaro">
                             </div>
                             <div class="right">
                                 <div class="text-box">
@@ -157,7 +162,7 @@
                     <div class="container-slide">
                         <div class="slide">
                             <div class="left" data-image-slide>
-                                <img src="./images/matteo-ritacco.jpg" alt="Matteo Ritacco">
+                                <img src="./assets/images/matteo-ritacco.jpg" alt="Matteo Ritacco">
                             </div>
                             <div class="right">
                                 <div class="text-box">
@@ -171,7 +176,7 @@
                     <div class="container-slide">
                         <div class="slide">
                             <div class="left" data-image-slide>
-                                <img src="./images/miguel-sanchez.jpg" alt="Miguel Sanchez">
+                                <img src="./assets/images/miguel-sanchez.jpg" alt="Miguel Sanchez">
                             </div>
                             <div class="right">
                                 <div class="text-box">
@@ -201,7 +206,7 @@
                         sociedade local. O objetivo é que todos trabalhem juntos para progredirmos cada vez mais.</p>
                 </div>
                 <div class="right coworking">
-                    <img src="./images/building-structure.png" alt="Estrutura predial">
+                    <img src="./assets/images/building-structure.png" alt="Estrutura predial">
                 </div>
                 <div class="space"></div>
                 <div class="contact" id="contact">
@@ -248,10 +253,10 @@
             </div>
         </footer>
     </div>
-    <script src="./scripts/global.js"></script>
-    <script src="./scripts/home.js"></script>
-    <script src="./scripts/slides.js"></script>
-    <script src="./scripts/app.js" type="module"></script>
+    <script src="./assets/scripts/global.js"></script>
+    <script src="./assets/scripts/home.js"></script>
+    <script src="./assets/scripts/slides.js"></script>
+    <script src="./assets/scripts/app.js" type="module"></script>
 </body>
 
 </html>

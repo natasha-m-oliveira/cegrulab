@@ -2,6 +2,10 @@ body {
     background: var(--blue-dark);
 }
 
+.content header img {
+    width: 10rem;
+}
+
 .left, .right {
     width: 50%;
 }

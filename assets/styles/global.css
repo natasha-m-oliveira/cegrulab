@@ -100,10 +100,6 @@ button:hover, .button:hover {
     transition: all 0.3s ease-in-out;
 }
 
-.content header img {
-    width: 12;
-}
-
 .content header .nav .btn-mobile {
     display: none;
 }

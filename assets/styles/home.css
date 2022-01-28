@@ -298,43 +298,6 @@ h3 {
     font-weight: bolder;
 }
 
-/*Toasts*/
-
-.container .notification {
-    height: 100vh;
-    position: absolute;
-    z-index: 1000;
-}
-
-.container .notification #toasts {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.container .notification .toast {
-    background-color: var(--white);
-    border-radius: 5px;
-    padding: 1rem 2rem;
-    margin: 0.5rem;
-    font-weight: 700;
-}
-
-.container .notification .toast.info {
-    color: var(--blue);
-}
-
-.container .notification .toast.success {
-    color: var(--green);
-}
-
-.container .notification .toast.error {
-    color: var(--red);
-}
-
 /*Footer*/
 
 .content footer {

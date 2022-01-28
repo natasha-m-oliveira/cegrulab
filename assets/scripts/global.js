@@ -1,5 +1,5 @@
-const menuItems = document.querySelectorAll("[data-menu-item]");
-const btnMobile = document.querySelector("[data-btn-mobile]");
+const menuItems = document.querySelectorAll('[data-menu="list"]');
+const btnMobile = document.querySelector('[data-menu="button"]');
 const body = document.querySelector("body");
 
 menuItems.forEach(menuItemClick => {

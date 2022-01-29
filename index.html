@@ -26,7 +26,9 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="./assets/styles/global.css">
+    <link rel="stylesheet" href="./assets/styles/menu-mobile.css">
     <link rel="stylesheet" href="./assets/styles/home.css">
+    <link rel="stylesheet" href="./assets/styles/slide.css">
 
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -39,219 +41,211 @@
 </head>
 
 <body>
-    <div id="home" class="content" id="outset">
-        <header>
-            <img src="./assets/images/header-logo.svg" alt="CEGRULAB LOGO" class="logo">
-            <nav role="navigation" class="nav" data-nav>
-                <button aria-label="Abrir menu" class="btn-mobile" data-menu="button" aria-haspopup="true"
-                    aria-controls="menu" aria-expanded="false">Menu <span class="burger"></span></button>
-                <ul data-menu="list" role="menu" id="menu">
-                    <li><a href="#outset" data-menu-item class="current">INÍCIO</a></li>
-                    <li><a href="#about" data-menu-item>QUEM SOMOS</a></li>
-                    <li><a href="#coworking" data-menu-item>COWORKING</a></li>
-                    <li><a href="#services" data-menu-item>SERVIÇOS</a></li>
-                    <li><a href="#contact" data-menu-item>CONTATO</a></li>
-                    <li><a href="business-council.html" data-menu-item>CONSELHO EMPRESARIAL</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="container">
-                <div class="anchor">
-                    <a href="#" id="top-of-page" class="button" data-anchor></a>
-                </div>
-                <div class="left outset">
-                    <div class="description">
-                        <h1>Um ecossistema para superar desafios através da inovação</h1>
-                        <p>INTEGRANDO EMPRESÁRIOS E ESTUDANTES PARA DESENVOLVER GUARULHOS E ALTO TIETÊ</p>
-                    </div>
-                </div>
-                <div class="right outset">
-                    <img src="./assets/images/outset.svg" alt="">
-                </div>
-                <div class="space"></div>
-                <div class="left about" id="about">
-                    <div class="description">
-                        <h2>Quem somos</h2>
-                        <p>Somos um hub de inovação, ou seja, somos responsáveis por trazer inovação para a cidade de
-                            Guarulhos e Alto Tietê, junto com o setor público, privado, faculdades e principalmente, a
-                            sociedade local. O objetivo é que todos trabalhem juntos para progredirmos cada vez mais.
-                        </p>
-                        <a href="#team" class="button">CONHEÇA NOSSO TIME</a>
-                    </div>
-                </div>
-                <div class="right about">
-                    <img src="./assets/images/group-business-executives-discussing.jpg" alt="Grupo de executivos discutindo">
-                </div>
-                <div class="space"></div>
-                <div class="services title" id="services">
-                    <h2 data-services-title>Entenda como podemos<br />te ajudar a inovar!</h2>
-                </div>
-                <div class="left services">
-                    <img src="./assets/images/startup-leader.jpg" alt="Startup Leader">
-                </div>
-                <div class="right services text-box">
-                    <div class="description">
-                        <h3>Startup e Incubadora</h3>
-                        <p>​A Incubadora incorpora startups em diferentes estágios de desenvolvimento e agrega expertise
-                            para desenvolvê-las como negócios. As startups locais têm acesso a um espaço completo e
-                            acesso à networking. Além de poderem usar o CEGRULAB como vitrine de seu trabalho para as
-                            grandes empresas.</p>
-                        <a href="#contact" class="button">TENHO INTERESSE!</a>
-                    </div>
-                </div>
-                <div class="left services text-box">
-                    <div class="description">
-                        <h3>Diagnóstico de Inovação</h3>
-                        <p>​​Observamos a inovação dentro da sua empresa em diferentes perspectivas para avaliar seus
-                            diversos possíveis graus de inovação. O método consiste em 5 etapas de relatórios sobre
-                            inovação, direcionados a públicos distintos da sua empresa, na busca de analisar junto a
-                            todo o time as forças e fraquezas internas e externas.</p>
-                        <a href="#contact" class="button">TENHO INTERESSE!</a>
-                    </div>
-                </div>
-                <div class="right services">
-                    <img src="./assets/images/business-people-meeting.jpg" alt="Encontro de Empresários">
-                </div>
-                <div class="left services">
-                    <img src="./assets/images/business-people-shaking-hands-together.jpg"
-                        alt="Aperto de Mãos Entre Empresários">
-                </div>
-                <div class="right services text-box">
-                    <div class="description">
-                        <h3>Sprint 1</h3>
-                        <p>​​É o início de uma jornada inovadora que apresenta metodologias ágeis e entrega à sua
-                            empresa ferramentas de gestão novas e relevantes. A partir da união de representantes das
-                            empresas parceiras, iremos propor soluções usando Design Thinking.</p>
-                        <a href="#contact" class="button">TENHO INTERESSE!</a>
-                    </div>
-                </div>
-                <div class="space"></div>
-                <div class="box" id="team">
-                    <div class="title">
-                        <h2 data-team-title>Conheça o time que vai<br />ajudar sua empresa!</h2>
-                    </div>
-                    <div class="container-slide active">
-                        <div class="slide">
-                            <div class="left" data-image-slide>
-                                <img src="./assets/images/luisa-camerini.jpg" alt="Luisa Camerini">
-                            </div>
-                            <div class="right">
-                                <div class="text-box">
-                                    <h3>Luisa Camerini</h3>
-                                    <p>Marketing</p>
-                                    <a href="#contact" class="button" data-btn-anchor>ENTRAR EM CONTATO</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-slide">
-                        <div class="slide">
-                            <div class="left" data-image-slide>
-                                <img src="./assets/images/rodrigo-fukunaro.jpg" alt="Rodrigo Fukunaro">
-                            </div>
-                            <div class="right">
-                                <div class="text-box">
-                                    <h3>Rodrigo Fukunaro</h3>
-                                    <p>Business Design</p>
-                                    <a href="#contact" class="button" data-btn-anchor>ENTRAR EM CONTATO</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-slide">
-                        <div class="slide">
-                            <div class="left" data-image-slide>
-                                <img src="./assets/images/matteo-ritacco.jpg" alt="Matteo Ritacco">
-                            </div>
-                            <div class="right">
-                                <div class="text-box">
-                                    <h3>Matteo Ritacco</h3>
-                                    <p>Gerente de Comunicação</p>
-                                    <a href="#contact" class="button" data-btn-anchor>ENTRAR EM CONTATO</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-slide">
-                        <div class="slide">
-                            <div class="left" data-image-slide>
-                                <img src="./assets/images/miguel-sanchez.jpg" alt="Miguel Sanchez">
-                            </div>
-                            <div class="right">
-                                <div class="text-box">
-                                    <h3>Miguel Sanchez</h3>
-                                    <p>Facilities</p>
-                                    <a href="#contact" class="button" data-btn-anchor>ENTRAR EM CONTATO</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="prev" data-prev aria-label="Previous">&lt</div>
-                    <div id="next" data-next aria-label="Next">&gt</div>
-                    <div aria-label="Slides" class="indicator">
-                        <span class="btn active" data-btn></span>
-                        <span class="btn" data-btn></span>
-                        <span class="btn" data-btn></span>
-                        <span class="btn" data-btn></span>
-                    </div>
-                </div>
-                <div class="space"></div>
-                <div class="coworking title" id="coworking">
-                    <h2 data-coworking-title>Faça parte do nosso<br />coworking e expanda<br />seus horizontes!</h2>
-                </div>
-                <div class="left coworking">
-                    <p>Somos um hub de inovação, ou seja, somos responsáveis por trazer inovação para a cidade de
-                        Guarulhos e Alto Tietê, junto com o setor público, privado, faculdades e principalmente, a
-                        sociedade local. O objetivo é que todos trabalhem juntos para progredirmos cada vez mais.</p>
-                </div>
-                <div class="right coworking">
-                    <img src="./assets/images/building-structure.png" alt="Estrutura predial">
-                </div>
-                <div class="space"></div>
-                <div class="contact" id="contact">
-                    <div class="panel">
-                        <h2>Entre em contato</h2>
-                    </div>
-                </div>
-                <div class="notification">
-                    <div id="toasts"></div>
-                </div>
-                <div class="contact form">
-                    <form action="">
-                        <input type="text" id="origin" class="sr-only" readonly>
-                        <label for="name">Nome *</label>
-                        <input type="text" id="name" inputmode="verbatim" required data-type="name">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" inputmode="email" required data-type="email">
-                        <label for="tel">Telefone *</label>
-                        <input type="tel" id="tel" inputmode="tel" required data-type="phone">
-                        <label for="message">Mensagem</label>
-                        <textarea id="message" cols="30" rows="2"></textarea>
-                        <div class="buttons">
-                            <button data-submit-form>Enviar</button>
-                        </div>
-                    </form>
-                </div>
+    <div id="home" class="grid-container">
+      <header class="header">
+          <div class="logo">
+            <img src="./assets/images/header-logo.svg" alt="CEGRULAB LOGO">
+          </div>
+          <nav role="navigation" class="nav" data-nav>
+              <button aria-label="Abrir menu" class="btn-mobile" data-menu="button" aria-haspopup="true"
+                  aria-controls="menu" aria-expanded="false">Menu <span class="burger"></span></button>
+              <ul data-menu="list" role="menu" id="menu" class="menu-list">
+                  <li><a href="#outset" data-menu-item class="current">INÍCIO</a></li>
+                  <li><a href="#about" data-menu-item>QUEM SOMOS</a></li>
+                  <li><a href="#coworking" data-menu-item>COWORKING</a></li>
+                  <li><a href="#services" data-menu-item>SERVIÇOS</a></li>
+                  <li><a href="#contact" data-menu-item>CONTATO</a></li>
+                  <li><a href="business-council.html" data-menu-item>CONSELHO EMPRESARIAL</a></li>
+              </ul>
+          </nav>
+      </header>
+      <main class="page-content">
+        <section class="anchor">
+            <a href="#" id="top-of-page" class="button" data-anchor></a>
+        </section>
+        <section class="grid-section outset">
+          <h1 class="title">Um ecossistema para superar desafios através da inovação</h1>
+          <p>INTEGRANDO EMPRESÁRIOS E ESTUDANTES PARA DESENVOLVER GUARULHOS E ALTO TIETÊ</p>
+          <div class="image">
+            <img src="./assets/images/outset.svg" alt="">
+          </div>
+        </section>
+        <section class="grid-section about" id="about">
+          <h2 class="title">Quem somos</h2>
+          <p>Somos um hub de inovação, ou seja, somos responsáveis por trazer inovação para a cidade de Guarulhos e Alto Tietê, junto com o setor público, privado, faculdades e principalmente, a sociedade local. O objetivo é que todos trabalhem juntos para progredirmos cada vez mais.</p>
+          <a href="#team" class="button">CONHEÇA NOSSO TIME</a>
+          <div class="image">
+            <img src="./assets/images/group-business-executives-discussing.jpg" alt="Grupo de executivos discutindo">
+          </div>
+        </section>
+        <section class="grid-section services" id="services">
+          <h2 data-services-title class="title">Entenda como podemos<br />te ajudar a inovar!</h2>
+          <div class="card">
+            <img src="./assets/images/startup-leader.jpg" alt="Startup Leader">
+          </div>
+          <div class="card">
+            <h3 class="title">Startup e Incubadora</h3>
+            <p>​A Incubadora incorpora startups em diferentes estágios de desenvolvimento e agrega expertise
+                para desenvolvê-las como negócios. As startups locais têm acesso a um espaço completo e
+                acesso à networking. Além de poderem usar o CEGRULAB como vitrine de seu trabalho para as
+                grandes empresas.</p>
+            <a href="#contact" class="button">TENHO INTERESSE!</a>
+          </div>
+          <div class="card">
+            <h3 class="title">Diagnóstico de Inovação</h3>
+            <p>​​Observamos a inovação dentro da sua empresa em diferentes perspectivas para avaliar seus
+                diversos possíveis graus de inovação. O método consiste em 5 etapas de relatórios sobre
+                inovação, direcionados a públicos distintos da sua empresa, na busca de analisar junto a
+                todo o time as forças e fraquezas internas e externas.</p>
+            <a href="#contact" class="button">TENHO INTERESSE!</a>              
+          </div>
+          <div class="card">
+            <img src="./assets/images/business-people-meeting.jpg" alt="Encontro de Empresários">
+          </div>
+          <div class="card">
+            <img src="./assets/images/business-people-shaking-hands-together.jpg"
+                alt="Aperto de Mãos Entre Empresários">              
+          </div>
+          <div class="card">
+            <h3 class="title">Sprint 1</h3>
+            <p>​​É o início de uma jornada inovadora que apresenta metodologias ágeis e entrega à sua
+                empresa ferramentas de gestão novas e relevantes. A partir da união de representantes das
+                empresas parceiras, iremos propor soluções usando Design Thinking.</p>
+            <a href="#contact" class="button">TENHO INTERESSE!</a>
+          </div>
+        </section>
+        <section class="grid-section box" id="team">
+          <h2 data-team-title class="title">Conheça o time que vai<br />ajudar sua empresa!</h2>
+          <div class="container-slide active">
+              <div class="slide">
+                  <div class="left" data-image-slide>
+                      <img src="./assets/images/luisa-camerini.jpg" alt="Luisa Camerini">
+                  </div>
+                  <div class="right">
+                      <div class="text-box">
+                          <h3>Luisa Camerini</h3>
+                          <p>Marketing</p>
+                          <a href="#contact" class="button" data-btn-anchor>ENTRAR EM CONTATO</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="container-slide">
+              <div class="slide">
+                  <div class="left" data-image-slide>
+                      <img src="./assets/images/rodrigo-fukunaro.jpg" alt="Rodrigo Fukunaro">
+                  </div>
+                  <div class="right">
+                      <div class="text-box">
+                          <h3>Rodrigo Fukunaro</h3>
+                          <p>Business Design</p>
+                          <a href="#contact" class="button" data-btn-anchor>ENTRAR EM CONTATO</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="container-slide">
+              <div class="slide">
+                  <div class="left" data-image-slide>
+                      <img src="./assets/images/matteo-ritacco.jpg" alt="Matteo Ritacco">
+                  </div>
+                  <div class="right">
+                      <div class="text-box">
+                          <h3>Matteo Ritacco</h3>
+                          <p>Gerente de Comunicação</p>
+                          <a href="#contact" class="button" data-btn-anchor>ENTRAR EM CONTATO</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="container-slide">
+              <div class="slide">
+                  <div class="left" data-image-slide>
+                      <img src="./assets/images/miguel-sanchez.jpg" alt="Miguel Sanchez">
+                  </div>
+                  <div class="right">
+                      <div class="text-box">
+                          <h3>Miguel Sanchez</h3>
+                          <p>Facilities</p>
+                          <a href="#contact" class="button" data-btn-anchor>ENTRAR EM CONTATO</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div id="prev" data-prev aria-label="Previous">&lt</div>
+          <div id="next" data-next aria-label="Next">&gt</div>
+          <div aria-label="Slides" class="indicator">
+              <span class="btn active" data-btn></span>
+              <span class="btn" data-btn></span>
+              <span class="btn" data-btn></span>
+              <span class="btn" data-btn></span>
+          </div>
+        </section>
+        <section class="grid-section coworking" id="coworking">
+          <h2 data-coworking-title class="title">Faça parte do nosso<br />coworking e expanda<br />seus horizontes!</h2>
+          <p>Somos um hub de inovação, ou seja, somos responsáveis por trazer inovação para a cidade de
+              Guarulhos e Alto Tietê, junto com o setor público, privado, faculdades e principalmente, a
+              sociedade local. O objetivo é que todos trabalhem juntos para progredirmos cada vez mais.</p>
+          <div class="image">
+            <img src="./assets/images/building-structure.png" alt="Estrutura predial">
+          </div>          
+        </section>
+        <section class="grid-section contact">
+          <h2 class="title">Entre em contato</h2>
+          <form action="" class="contact-form">
+            <input type="text" id="origin" class="sr-only" readonly />
+            <label for="name">Nome *</label>
+            <input
+              type="text"
+              id="name"
+              inputmode="verbatim"
+              required
+              data-type="name"
+            />
+            <label for="email">Email *</label>
+            <input
+              type="email"
+              id="email"
+              inputmode="email"
+              required
+              data-type="email"
+            />
+            <label for="tel">Telefone *</label>
+            <input
+              type="tel"
+              id="tel"
+              inputmode="tel"
+              required
+              data-type="phone"
+            />
+            <label for="message">Mensagem</label>
+            <textarea id="message" cols="30" rows="2"></textarea>
+            <div class="buttons">
+              <button data-submit-form>Enviar</button>
             </div>
-        </main>
-        <footer>
-            <div class="first-line">
-                <div class="address">
-                    <p>CEGRULAB</p>
-                    <p>Rua Força Pública, 89 - Centro - Guarulhos - SP</p>
-                    <p>(11) 94595-6773</p>
-                </div>
-                <div class="social-media">
-                    <a href="https://www.instagram.com/cegru.lab/" target="_blank" class="social-item" id="instagram"></a>
-                    <a href="https://www.linkedin.com/company/261615" target="_blank" class="social-item" id="linkedin"></a>
-                    <a href="https://wa.me/5511945956773" target="_blank" class="social-item" id="whatsapp"></a>
-                </div>
-            </div>
-            <div class="second-line">
-                <p>Copyright © 2021 by <a href="https://github.com/natasha-m-oliveira">Natasha M Oliveira</a></p>
-            </div>
-        </footer>
+          </form>
+          <div class="notification">
+            <div id="toasts"></div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+          <div class="first-line">
+              <div class="address">
+                  <p>CEGRULAB</p>
+                  <p>Rua Força Pública, 89 - Centro - Guarulhos - SP</p>
+                  <p>(11) 94595-6773</p>
+              </div>
+              <div class="social-media">
+                  <a href="https://www.instagram.com/cegru.lab/" target="_blank" class="social-item" id="instagram"></a>
+                  <a href="https://www.linkedin.com/company/261615" target="_blank" class="social-item" id="linkedin"></a>
+                  <a href="https://wa.me/5511945956773" target="_blank" class="social-item" id="whatsapp"></a>
+              </div>
+          </div>
+          <div class="second-line">
+              <p>Copyright © 2021 by <a href="https://github.com/natasha-m-oliveira">Natasha M Oliveira</a></p>
+          </div>
+      </footer>
     </div>
     <script src="./assets/scripts/global.js"></script>
     <script src="./assets/scripts/home.js"></script>

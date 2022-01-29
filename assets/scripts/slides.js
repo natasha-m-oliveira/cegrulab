@@ -125,9 +125,9 @@ function autoplay() {
         toNext("click");
     }
 }
-//Autoplay
+// //Autoplay
 
-setInterval(autoplay, 7000); //Slides mudam a cada 7 segundos
+// setInterval(autoplay, 7000); //Slides mudam a cada 7 segundos
 
 next.addEventListener("click", toNext);
 next.addEventListener("touchstart", toNext);

@@ -14,7 +14,7 @@ menuItems.forEach(menuItemClick => {
         let windowSize = window.innerWidth;
         nav.classList.remove("active");
         if(windowSize <= 600){
-            btnMobile.currentTarget.setAttribute("aria-label", "Abrir menu");
+            btnMobile.setAttribute("aria-label", "Abrir menu");
         }
     });
 });
